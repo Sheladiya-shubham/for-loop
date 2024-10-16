@@ -44,4 +44,5 @@ for(let t = 1; t<=number; t++){
         console.log(t);
     }
 }
+7
 
