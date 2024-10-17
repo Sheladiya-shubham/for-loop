@@ -12,6 +12,7 @@
 //     }
 //     console.log(data);
 // }
+
     // 2.
     // 1
     // 0 1
@@ -19,14 +20,23 @@
     // 1 0 1 0
     // 1 0 1 0 1
 
-    for (let i = 1; i <= 5; i++) {
-        let data = '';
-        for (let j = 1; j <= i; j++) {
-            data += ((i + j) % 2 === 0 ? '1 ' : '0 ');
-        }
-        console.log(data);
-    }
-    
+
+    // let num=1;
+    // for (let i = 1; i <= 5; i++) {
+    //     let data = '';
+    //     for (let j = 1; j <= i; j++) {
+
+    //        if(num % 2===0){
+    //         data += 0 + " ";
+    //        }
+    //        else{
+    //         data += 1 + " ";
+    //        }
+    //        num++;
+    //     }
+    //     console.log(data);
+    // }
+  
 
 // 3.
     // 5

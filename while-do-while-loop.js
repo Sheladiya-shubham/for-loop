@@ -1,7 +1,7 @@
 // 1.Print out series 1,4,9,16....,n
 
-// let number=Number(prompt('Enter The Number='));
-//     console.log(typeof number);
+let number=Number(prompt('Enter The Number='));
+    console.log(typeof number);
 
 // for(let w=1; w<=number;w++){
 //     console.log(w*w);
@@ -9,13 +9,40 @@
 
 // 2.print out series 1,4,3,16,5,...,n
 
+// let number = Number(prompt('Enter number: '));
+// console.log(typeof number)
+
+// let i=1;
+
+// while(i<=number){
+//     if (i%2==1) {
+//         console.log(i);
+//     }
+//     else{
+//         console.log(i*i);
+//     }
+//     i++;
+// }
+
 
 // 3.print out series 1,2,4,8,16,...n
-// let n=100;
-// for( let y=1; y<=number; y++){
-//     console.log(y*2);
-        
+ 
+let value = 1;
+
+while (value <= number) {
+    console.log(value);
+    value *= 2; 
+}
+
+
+// 4.Print out series 1,4,12,32,80,...,n
+// let num=1;  
+// for (let i = 1; i<=number; i++) { 
+//     console.log(num*i);
+//         num*=2;
 // }
+
+
 
 // 5.Find the sum of numbers from 1 to 100
 // let sum=0;
