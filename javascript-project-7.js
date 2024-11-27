@@ -11,6 +11,7 @@ class school{
         console.log("---------------------------");
     }
 
+    
     faculty (name,age,contact,email){
         console.log("Faculty Details:-");
         console.log("Name:-",name);
