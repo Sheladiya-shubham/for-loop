@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  .row{
+    justify-content: space-between;
+  }
+  
+  body{
+    font-family:'Oswald';
+    background-color: #f5f7ff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+  }
+  
+  img{
+    max-width: 100%;
+    display: block;
+    width: 100%;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  /* ----------------calculator--------------- */
+
+  .calculatore{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .calculatore input{
+    margin-top: 30px;
+    height: 65px;
+    width: 350px;
+    padding: 15px;
+    border-radius: 40px;
+    background-color:#2388ff;
+    border: 1px solid #2388ff;
+    color: white;
+    text-align:end;
+    font-size:40px;
+  }
+
+  .calculatore .btn{
+    border-radius:50px;
+    width: 70px;
+    height: 70px;
+    margin-top: 7px;
+    font-size: 30px;
+    border: 1px solid transparent;
+    margin-left: 10px;
+  }
+  .calculatore .calculate{
+    background-color:#d8ddf0;
+    color: #6e7691;
+    font-weight: 600;
+  }
+  .calculatore .plus{
+    background-color:rgb(99, 222, 119);
+    box-shadow: rgba(99, 222,119) 0px 5px 10px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    color: #fff;
+    font-size:45px;
+  }
+  .calculatore .multi{
+    background-color:rgb(255, 200, 4);
+    box-shadow: rgba(255, 200, 4) 0px 5px 10px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    color: #fff;
+  }
+  .calculatore .divide{
+    background-color:rgb(35, 136, 255);
+    box-shadow: rgba(35, 136, 255) 0px 5px 10px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    color: #fff;
+  }
+  .calculatore .minus{
+    background-color: rgb(255, 68, 90);
+    color: #fff;
+    font-size: 45px;
+    box-shadow: rgba(255, 68, 90) 0px 5px 10px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+  .calculatore .clear {
+    background-color: rgb(31, 43, 84);
+    box-shadow: rgba(31,43, 84) 0px 5px 10px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    color: #fff;
+  }
+  .calculatore .module{
+    background-color: rgb(245, 247, 255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #6e7691;
+    font-weight: 600;
+  }
