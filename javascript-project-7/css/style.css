@@ -1,0 +1,105 @@
+/* ------------------default-css------------------- */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Alice';
+}
+
+a {
+    text-decoration: none;
+}
+
+.background {
+    background-image: url(../images/istockphoto-493849569-612x612.jpg);
+    height: 100vh;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 96px;
+    height: 650px;
+    width: 575px;
+    padding: 0 10px 10px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+}
+
+form h1 {
+    color: black;
+    border: 1px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 7px 10px;
+    background-color: white;
+}
+
+form .data {
+    margin-top: 60px;
+}
+
+form .form-control {
+    width: 500px;
+    border-radius: 30px !important;
+    background-color: transparent !important;
+}
+input.form-control:focus {
+    color:white;
+    background-color: var(--bs-body-bg);
+    border-color:white;
+    outline: 0;
+    box-shadow: none;
+}
+form label {
+    color: white;
+}
+
+.form-floating>.form-control-plaintext~label, 
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    transform: scale(.85) translateY(-32px) translateX(15px);
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: black;
+    outline: 0;
+    box-shadow: none;
+}
+
+.me {
+    margin: 0 auto;
+}
+
+.register span {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.register span a {
+    color: white;
+}
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+}

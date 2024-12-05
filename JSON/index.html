@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .editmodel{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="addmodel" id="addmodel">
+        <h1 align="center">User Information</h1>
+    <table align="center">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="fname" id="fname"></td>
+        </tr>
+    
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="femail" id="femail"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="fpassword" id="fpass"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit" id="btn">Add User</button></td>
+        </tr>
+    </table>
+    </div>
+
+    <div class="editmodel" id="editmodel">
+        <h1 align="center">Update user Information</h1>
+    <table align="center">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="fname" id="editname"></td>
+        </tr>
+    
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="femail" id="editemail"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="fpassword" id="editpass"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit" id="updatebtn">Update user</button></td>
+        </tr>
+    </table>
+    </div>
+    <hr/>
+    <table border="1">
+        <tr>
+            <th>Sr.no</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+        <tbody id="tbody"></tbody>
+
+    </table>
+    <script src="add.js"></script>
+</body>
+</html>

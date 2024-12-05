@@ -95,7 +95,7 @@ School.faculty("Deepika padukone singh", 40, 7667453765,"deepikapadukonesingh@gm
 class shape{
      rectangleArea(length,width){
         return length * width;
-    }
+    } 
 
      circleArea(radius){
         return Math.PI * radius * radius;
