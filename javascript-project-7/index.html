@@ -3,21 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louis Vuitton</title>
-
+    <link rel="icon" type="images/svg" href="images/louis-vuitton-1-logo-png-transparent.png" />
+    <title>LOUIS VUITTON-Official Intern</title>
     <link rel="stylesheet" type="text/css" href="css/all.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/font.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
+    <style>
+      .fashion{
+          display: none;
+      }
+     
+  </style>
 </head>
+
 <body>
 
 
-    <section class="background">
+  <div class="louis" id="louis">
+    <header>
+      <div class="container">
+          <div class="row">
+              <nav class="menu">
+                <ul class="d-flex">
+                  <li id="vuitton"><a href="javascript:void(0)" ><i class="fa-solid fa-bars"></i>Menu</a></li>
+                  <h1 class="text-center text-uppercase">Louis Vuitton</h1>
+                </ul>
+                
+              </nav>
+
+          </div>
+      </div>
+  </header> 
+  
+  <section class="lv-video">
+    <video src="images/C8AnWB89433QebdX4ljwO42m_11.mp4" loop muted autoplay="autoplay" ></video>
+  </section>
+  </div>
+
+
+<div class="fashion" id="fashion">
+       <section class="background">
+        <button class="btn" id="backbtn"><i class="fa-solid fa-arrow-left-long"></i> Back</button>
         <form>
           <h1>LOUIS VUITTON</h1>
           <div class="data">
+            <div class="mb-4 form-floating dear ">
+              <input type="file" placeholder="product-image" class="form-control" id="pimage" required/>
+            </div>
             <div class="mb-4 form-floating dear ">
               <input type="text" placeholder="product-name" class="form-control" id="pname" required/>
                <label class="mb-1">Product Name</label>
@@ -34,26 +68,43 @@
               <input type="text" placeholder="price" class="form-control" id="pprice" required/>
               <label class="mb-1">Price</label>
             </div>
-            <div class="forgot d-flex">
-              <div class="remember">
-                <input type="checkbox" id="remember" class="deer" required/>
-                <label for="remember" class="text-white">Remember me</label>
-              </div>
-      
-              
+            <div class="mb-4 form-floating dear">
+              <input type="text" placeholder="Size" class="form-control" id="psize" required/>
+              <label class="mb-1">Size</label>
             </div>
       
-            <button class="btn bg-white mt-3 w-100 text-black" type="submit" id="pbtn">Add TO Cart</button>
+            <button class="btn bg-white mt-3 w-100 text-black" type="submit" id="pbtn">Add TO Product</button>
     
-            
+           
           </div>
     
         </form>
-      </section>
-
-
-
-    <script src="day-1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <button  class="viewbtn btn"><i class="fa-solid fa-cart-shopping"></i> View Your Cart</button>
+      </section> 
+<br>
+<br>
+<br>
+<br>
+     <div class="model" id="model">
+      <div id="card-container" class="d-flex flex-wrap justify-content-center">
+        <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+               
+                <p class="card-text">
+                    <strong>Description:</strong> Product description here<br>
+                    <strong>Category:</strong> Product category<br>
+                    <strong>Size:</strong> Product size
+                    <br>
+                </p>
+                <strong>Price:</strong> Product price
+                <button  class="btn btn-primary" id="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+      <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+      <script src="day-1.js"></script>
 </body>
 </html>

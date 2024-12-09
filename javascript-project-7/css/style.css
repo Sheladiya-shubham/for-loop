@@ -8,14 +8,56 @@ body {
     font-family: 'Alice';
 }
 
+li{
+    list-style:none;
+}
 a {
     text-decoration: none;
 }
-
+.container{
+    max-width:1850px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+/* -------------------------------------------------- */
+html::-webkit-scrollbar{
+    width: 0;
+}
+header {
+    height:80px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+header .menu{
+    margin-top: 25px;
+}
+header .menu  a{
+    text-transform: uppercase;
+    font-weight: 500;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+}
+header .menu h1{
+    margin: 0 auto;
+    margin-top: -7px;
+}
+.fa-bars{
+    margin-right:10px;
+}
 .background {
-    background-image: url(../images/istockphoto-493849569-612x612.jpg);
+    background-image: url(../images/new.avif);
     height: 100vh;
-    max-width: 100%;
+    min-width: 100% !important;
     background-size: cover;
     background-position: center; 
     position: relative;
@@ -32,13 +74,13 @@ form {
     /* justify-content: center; */
     align-items: center;
     padding-top: 96px;
-    height: 650px;
+    height: 750px;
     width: 575px;
     padding: 0 10px 10px;
     margin: 0 auto;
     border-radius: 20px;
     border: 1px solid white;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 }
 
 form h1 {
@@ -58,6 +100,7 @@ form .form-control {
     width: 500px;
     border-radius: 30px !important;
     background-color: transparent !important;
+    border: 2px solid white;
 }
 input.form-control:focus {
     color:white;
@@ -67,7 +110,9 @@ input.form-control:focus {
     box-shadow: none;
 }
 form label {
-    color: white;
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .form-floating>.form-control-plaintext~label, 
@@ -103,3 +148,77 @@ form label {
     text-align: center;
     margin-top: 20px;
 }
+table{
+    color: black;
+    border: 1px solid black;
+}
+table th{
+    color: black;
+    border: 1px solid black;
+}
+table td{
+    color:black;
+    border: 1px solid black;
+}
+.lv-video video{
+    /* bottom: 0; */
+    max-height: 100vh;
+    object-fit: cover;
+    overflow-y:hidden;
+    top: 0;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.fashion .background .btn{
+    padding: 8px 16px;
+    color: black;
+    background-color: white;
+    margin-top:-1000px;
+    margin-left: 4px;
+}
+
+.fashion .background .viewbtn{
+    padding: 8px 16px;
+    color: black;
+    background-color: white;
+    /* margin-bottom:-1800px; */
+    /* text-align: center !important; */
+    margin-right:5px;
+}
+
+.card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color:white;
+    --bs-card-border-radius:2.2rem;
+    --bs-card-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+    box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px;
+}
+
+
