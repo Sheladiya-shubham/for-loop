@@ -1,53 +1,53 @@
-// 1.Write a program for Stack Operation Program (Insert, Delete, isEmpty, Length)
-class Stack {
-    constructor() {
-        this.stackArray = []; 
-    }
+// // 1.Write a program for Stack Operation Program (Insert, Delete, isEmpty, Length)
+// class Stack {
+//     constructor() {
+//         this.stackArray = []; 
+//     }
 
-    push(element) {
-        this.stackArray.push(element);
-        console.log(`${element} pushed into stack`);
-    }
+//     push(element) {
+//         this.stackArray.push(element);
+//         console.log(`${element} pushed into stack`);
+//     }
 
-    pop() {
-        if (this.isEmpty()) {
-            console.log("Stack Underflow! No elements to pop.");
-            return null;
-        }
-        return this.stackArray.pop();
-    }
+//     pop() {
+//         if (this.isEmpty()) {
+//             console.log("Stack Underflow! No elements to pop.");
+//             return null;
+//         }
+//         return this.stackArray.pop();
+//     }
 
-    isEmpty() {
-        return this.stackArray.length === 0;
-    }
+//     isEmpty() {
+//         return this.stackArray.length === 0;
+//     }
 
-    length() {
-        return this.stackArray.length;
-    }
+//     length() {
+//         return this.stackArray.length;
+//     }
 
-    printStack() {
-        console.log("Stack:", this.stackArray.join(" -> "));
-    }
-}
+//     printStack() {
+//         console.log("Stack:", this.stackArray.join(" -> "));
+//     }
+// }
 
-const stack = new Stack();
+// const stack = new Stack();
 
 
-stack.push(10);
-stack.push(20);
-stack.push(30);
-stack.printStack();
-// Output: Stack: 10 -> 20 -> 30
+// stack.push(10);
+// stack.push(20);
+// stack.push(30);
+// stack.printStack();
+// // Output: Stack: 10 -> 20 -> 30
 
-console.log("Popped Element:", stack.pop()); 
-// Output: Popped Element: 30
-stack.printStack();
-// Output: Stack: 10 -> 20
+// console.log("Popped Element:", stack.pop()); 
+// // Output: Popped Element: 30
+// stack.printStack();
+// // Output: Stack: 10 -> 20
 
-console.log("Is Stack Empty?", stack.isEmpty()); 
-// Output: false
-console.log("Stack Length:", stack.length()); 
-// Output: 2
+// console.log("Is Stack Empty?", stack.isEmpty()); 
+// // Output: false
+// console.log("Stack Length:", stack.length()); 
+// // Output: 2
 
 
 // 2.Write a program for Next Greater Element using Stack.
@@ -80,12 +80,51 @@ console.log(nextGreaterElements(arr));
 
 
 // 3.Write a program for a reverse string using Stack
-function reverseString(str) 
-{
-    return str.split('').reverse().join('');
-}
+class Stack {
+    constructor() {
+      this.items = [];
+    }
+  
+    push(element) {
+      this.items.push(element);
+    }
+  
+    pop() {
+      if (this.isEmpty()) {
+        throw new Error("Stack is empty!");
+      }
+      return this.items.pop();
+    }
 
-let inputString = "shubham";
-console.log(reverseString(inputString)); 
+    isEmpty() {
+      return this.items.length === 0;
+    }
+  }
+  
+  function reverseStringUsingStack(inputString) {
+    const stack = new Stack();
+  
+    for (let char of inputString) {
+      stack.push(char);
+    }
+  
+    let reversedString = "";
+  
+    while (!stack.isEmpty()) {
+      reversedString += stack.pop();
+    }
+  
+    return reversedString;
+  }
+  
+  // Example usage
+  const input = "hello world";
+  const reversed = reverseStringUsingStack(input);
+  console.log("Original String:", input);
+  console.log("Reversed String:", reversed);
 
-// expected out-put:-"mahbuhs"
+//   expected out-put:-
+// Original String: hello world
+// index.js:124 Reversed String: dlrow olleh
+
+  
